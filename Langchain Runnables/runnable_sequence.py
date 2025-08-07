@@ -17,7 +17,7 @@ prompt2=PromptTemplate(
     template="Explain me the following joke:{text}",
     input_variables=["text"]
 )
-parser=chain
+
 parser=StrOutputParser()
 
 chain=RunnableSequence(prompt,model,parser,prompt2,model,parser)
