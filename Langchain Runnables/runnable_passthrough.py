@@ -26,6 +26,7 @@ parallel_chain = RunnableParallel({
     "joke": RunnablePassthrough(),
     "explanation": RunnableSequence(prompt2, model, parser)
 })
+  #Combine
 
 final_chain= RunnableSequence(joke_gen_chain, parallel_chain)
 

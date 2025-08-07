@@ -12,7 +12,7 @@ prompt=PromptTemplate(
     template="Write a joke about {topic}",
     input_variables=["topic"]
 )
-
+#
 prompt2=PromptTemplate(
     template="Explain me the following joke:{text}",
     input_variables=["text"]
