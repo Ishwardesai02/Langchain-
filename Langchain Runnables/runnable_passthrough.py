@@ -28,6 +28,8 @@ parallel_chain = RunnableParallel({
 })
   #Combine
 
+result= RunnablePassthrough
+
 final_chain= RunnableSequence(joke_gen_chain, parallel_chain)
 
 print(final_chain.invoke({"topic": "pakistan"}))
